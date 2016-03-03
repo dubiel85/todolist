@@ -1,0 +1,90 @@
+body {
+    
+}
+
+.container {
+    text-align: center;
+}
+
+.notebook {
+    /* background-image: url("../img/clipart-1463.svg");
+    background-repeat: no-repeat;
+    display: inline-block;*/
+    box-sizing:border-box;
+    width: 50%;
+    float:left;
+}
+
+.manager {
+    box-sizing:border-box;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.input {
+    padding: 40px;
+    width: 170px;
+    background-color: beige;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.input::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    position: absolute;
+    bottom: -20px;
+    left: 200px;
+    border-radius: 20px;
+    z-index: -2;
+}
+
+.input::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    bottom: -20px;
+    left: 220px;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+img {
+    width: 50%;
+}
+
+.line-to-do {
+    height: 30px;
+    background-color: beige;
+}
+
+.selected::before {
+    content: "";
+    height: 17px;
+    width: 17px;
+    background-image: url("../img/di89MA5ie.svg");
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.selected {
+    color: firebrick;
+    text-decoration: line-through;
+}
+
+li {
+    font-family: sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
